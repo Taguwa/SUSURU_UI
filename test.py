@@ -619,7 +619,7 @@ def search():
 
 def result(length ,data):#結果を出力する
 
-    movie_frame.delete(all)
+    movie_frame.delete("all")
     #まずは検索結果数を表示
     if txt_part.get() == "":
         message = "以下の情報で検索しました。\n" + "ラーメンの種類 : " + select_type.get() + "\n" + "住所 : " + txt_area.get() + "\n\n\n条件に合う店舗が"+ length +"件見つかりました"
